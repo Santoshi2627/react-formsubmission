@@ -1,0 +1,105 @@
+/* .footer{
+    display: flex;
+    /* justify-content: center; */
+/* gap:"20px";
+    justify-content: center;
+} */
+
+
+/* #contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  box-shadow: 0px 0px 5px;
+  height: 30vh;
+  width: 80vw;
+  border-radius: 20px;
+  padding: 20px;
+} */
+/* #skills {
+  box-shadow: 0px 0px 5px;
+  height: 70vh;
+  width: 80vw;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+#projects {
+  box-shadow: 0px 0px 5px;
+  height: 80vh;
+  width: 80vw;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+#achievements {
+  box-shadow: 0px 0px 5px;
+  height: 30vh;
+  width: 80vw;
+  border-radius: 20px;
+  padding: 10px 20px;
+} */
+/* #certificates {
+  box-shadow: 0px 0px 5px;
+  height: 30vh;
+  width: 80vw;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  box-shadow: 0px 0px 5px;
+  height: 30vh;
+  width: 80vw;
+  border-radius: 20px;
+  padding: 20px;
+} */
+section{
+  box-shadow: 0px 0px 5px;
+  height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   padding: 20px;
+}
+#about-me{
+  display: flex;
+}
+#about:target,
+#contact:target,
+#skills:target,
+#about-me:target,
+#education:target,
+#projects:target,
+#certificates:target,
+#achievements:target {
+  /* display: block; */
+  /* height: 40vh; */
+  /* width: 80vw; */
+  background-color: rgb(141, 204, 241);
+  /* padding: 20%; */
+  height: 100vh;
+  width: 100vw;
+  font-size: 20px;
+  color:aliceblue;
+}
+
+section:target {
+  padding-top: 60px; /* Adjust this value based on your header height */
+  /* margin-top: -60px; Offset the scroll to account for padding */
+}
+
+/*media-queries*/
+@media (max-width: 428px) {
+  section{
+    height: 100%;
+    width: 100%;
+  }
+  #about-me img{
+    height: 20vh;
+    width: 20vw;
+  }
+}

@@ -1,0 +1,72 @@
+/* Default styles for the header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    background-color: lightpink;
+    width: 100%;
+    padding: 10px;
+    
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-decoration: none;
+  }
+  
+  li {
+    text-decoration: none;
+  }
+  
+  /* Hamburger Menu Styles */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .hamburger div {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+  }
+  
+  /* Hide the checkbox input */
+  .menu-toggle {
+    display: none;
+  }
+  
+  /* Media query for smaller screens (mobile) */
+  @media (max-width: 428px) {
+    ul {
+      display: none;  /* Hide menu by default on mobile */
+      flex-direction: column;  /* Stack the menu vertically */
+      gap: 10px;
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+      list-style: none;
+    }
+  
+    li {
+      font-size: 16px;
+      text-decoration: none;
+    }
+  
+    /* Show hamburger on mobile */
+    .hamburger {
+      display: flex;  /* Show hamburger icon on mobile */
+    }
+  
+    /* When the checkbox is checked, show the menu */
+    .menu-toggle:checked + .hamburger + ul {
+      display: flex;  /* Show menu */
+    }
+  }
+  
